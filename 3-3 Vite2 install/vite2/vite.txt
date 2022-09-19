@@ -1,0 +1,18 @@
+npm create vite@latest
+이거 하면 생성가능
+
+참고 링크
+https://vitejs-kr.github.io/guide/#scaffolding-your-first-vite-project
+
+
+프로젝트 로직(역순으로 추론)
+1. index.html의 id="app"를 가진 루트 엘리먼트 내부에 vue 컴포넌트를 끼워넣는다.
+
+2-1. main.js에서 createApp 함수를 vue 모듈에서 불러온다.
+2-2. main.js에서 App 컴포넌트를 App.vue에서 불러온다.
+2-3. createApp함수를 이용하여 vue 컴포넌트를 id="app" 루트 엘리먼트에 마운트시킨다.
+
+3-1. App.vue는 Single File Components로서, vue라는 확장자를 가지고, DOM 구조를 나타내는 template영역, CSS 코드를 나타내는 style 영역, JS코드를 가진 script 영역으로 구성된다.
+3-2. App.vue의 template 영역에 HelloWorld.vue 파일을 import하고 있다. msg를 미리 지정하여 HelloWorld.vue에서 넘겨받아 표현한다.
+
+
